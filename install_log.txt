@@ -1,0 +1,145 @@
+Download miniconda to provide the conda package manager from
+
+https://conda.io/miniconda.html
+(64-bit linux bash installer)
+
+Ran the install script from my home/workshops/Valters folder:
+
+~/Valters$ bash Miniconda3-latest-Linux-x86_64.sh
+
+Accept the licence and all the default install paths
+
+~/Valters$ export PATH=/home/workshops/miniconda3/bin:$PATH
+
+Follow the instructions provided by the RSE team to install the Intel python distribution
+
+~/Valters$ conda update conda
+~/Valters$ conda config --add channels intel
+~/Valters$ conda create -n idp intelpython3_core python=3
+
+## ACTIVATE THE CONDA ENVIRONMENT
+~/Valters$ source activate idp
+
+Now install the workshop specific packages:
+
+~/Valters$ conda install cython mpi4py numba
+
+Added these just in case people prefer them for note taking:
+
+~/Valters$ conda install ipython jupyter matplotlib
+
+Some C and C++ compilers, and an MPI implementation will also be needed:
+
+~/Valters$ sudo apt-get install gcc g++ openmpi-bin
+
+Some utilities to install for people's favourite editors etc.:
+
+~/Valters$ sudo apt-get install vim emacs vim-gtk
+
+
+All the packages installed with conda are listed in package-list.txt
+This was created with:
+
+conda list -n idp --export > package-list.txt
+
+
+
+## TESTING
+==========
+
+## Running all the tests at once
+
+Run the bash script:
+
+./run_all_workshop_tests.sh
+
+It should produce the output in the test_correct_output_log.txt
+
+i.e.
+
+(idp) workshops@RSE2018-workshops:~/Valters$ ./run_all_workshop_tests.sh 
+running build_ext
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+running build_ext
+435
+pi is approximately 3.1415927369231262, error is 0.0000000833333331
+main line
+module name: __main__
+parent process: 19099
+process id: 19100
+function f
+module name: __main__
+parent process: 19100
+process id: 19101
+hello bob
+3.1415927
+[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+
+
+## Running individual tests
+
+# Testing the Multiprocessing module (and Jupyter notebooks)
+In the test_multiprocessing directory, run "run_tests.sh". It should print out:
+
+(idp) workshops@RSE2018-workshops:~/Valters/test_multiprocessing$ python simple.py 
+main line
+module name: __main__
+parent process: 9019
+process id: 18483
+function f
+module name: __main__
+parent process: 18483
+process id: 18484
+hello bob
+3.1415927
+[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+
+
+# Testing Cython
+In the test_cython_basic directory, run the "run_tests.sh" script. It should print out:
+
+(idp) workshops@RSE2018-workshops:~/Valters/test_cython_basic$ ./run_test.sh 
+running build_ext
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
+
+# Testing Cython with openmp
+In the test_cython_openmp directory, run the "run_tests.sh" script. It should print out:
+
+(idp) workshops@RSE2018-workshops:~/Valters/test_cython_openmp$ ./run_tests.sh 
+running build_ext
+435
+
+
+# Testing mpi4py
+In the test_mpi4py directory, run the "run_tests.sh" script. You should get the following output (or very similar to...):
+
+(idp) workshops@RSE2018-workshops:~/Valters/test_mpi4py$ ./run_tests.sh 
+pi is approximately 3.1415927369231262, error is 0.0000000833333331
+
+
+# Testing numba
+In the test_numba directory, run the "run_tests.sh" script. It should print out: 
+
+(idp) workshops@RSE2018-workshops:~/Valters/test_numba$ ./run_tests.sh 
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+
+
+
+
+
+
+
