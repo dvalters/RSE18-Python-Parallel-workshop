@@ -12,6 +12,7 @@ Accept the licence and all the default install paths
 ~/Valters$ export PATH=/home/workshops/miniconda3/bin:$PATH
 
 Follow the instructions provided by the RSE team to install the Intel python distribution
+https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda
 
 ~/Valters$ conda update conda
 ~/Valters$ conda config --add channels intel
@@ -34,7 +35,7 @@ Some C and C++ compilers, and an MPI implementation will also be needed:
 
 Some utilities to install for people's favourite editors etc.:
 
-~/Valters$ sudo apt-get install vim emacs vim-gtk
+~/Valters$ sudo apt-get install vim emacs vim-gtk git
 
 
 All the packages installed with conda are listed in package-list.txt
