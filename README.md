@@ -14,8 +14,8 @@ Apart from the introduction, it is not not necessary to follow the Parts in the 
 0. [Introduction to Workshop](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Introduction.ipynb)
 1. [Part 1: Multiprocessing](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Part1_Multiprocessing.ipynb)
 2. [Part 2: Numba](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Part2_Numba.ipynb)
-3. [Part 3: Cython and parallelism](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Part4_CythonOpenMP.ipynb)
-4. [Part 4: mpi4py](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Part3_MPI4py.ipynb)
+3. [Part 3: Cython and parallelism](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Part3_CythonOpenMP.ipynb)
+4. [Part 4: mpi4py](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Part4_MPI4py.ipynb)
 5. [Discussion and Conclusions](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Conclusions.ipynb)
 
 
