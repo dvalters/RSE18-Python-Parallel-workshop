@@ -1,7 +1,8 @@
 # The Hitchhiker's Guide to Parallelism with Python
 
-_Workshop run at EuroSciPy 2018, Trento, Italy and Research Software Engineers conference 2018, Birmingham, England._
+This workshop will explore how do basic parallel programming in Python through a hands-on tour of some of the Python libraries that can be used to do parallel programming. It will start with a brief introduction to the issues that have given rise to the traditional thinking that Python is not a good language for parallel programming, namely the Global Interpreter Lock (GIL), why this currently prevents traditional thread-based parallelism in Python, but why that should not stop you from using Python to do parallel programming. The post-introduciton sections can be attempted in any order that suits the reader.
 
+_It is not an advanced-level parallel programming course! - But links and resources will be provided to more in-depth tutorials._
 
 ## Workshop contents
 
