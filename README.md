@@ -1,6 +1,6 @@
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-_The tutorial text/jupyter-notebbok-html rendered pages are free to reuse and share as you like. They are released under the Creative Commons "Share Alike" licence. The code in the repository is released under the GNU GPL 3.0 Licence. You are free to modify and reuse all of the contents of this repository!_
+_The tutorial text and jupyter notebook html-rendered pages are free to reuse and share as you like. They are released under the Creative Commons "Share Alike" licence. The code in the repository is released under the GNU GPL 3.0 Licence. You are free to modify and reuse all of the contents of this repository!_
 
 # The Hitchhiker's Guide to Parallelism with Python
 
