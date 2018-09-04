@@ -23,6 +23,19 @@ Apart from the introduction, it is not not necessary to follow the Parts in the 
 4. [Part 4: mpi4py](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Part4_MPI4py.ipynb)
 5. [Discussion and Conclusions](https://nbviewer.jupyter.org/github/dvalters/RSE18-Python-Parallel-workshop/blob/master/workshop_notebooks/Conclusions.ipynb)
 
+## Installation and testing of python packages notes
+
+The `install_log.txt` contains all the steps used to set up the VM used at the RSE18 conference (apt installs, conda install etc) - you can use it outwith the conference to replicate the environment used there.
+
+The `package-list.txt` lists all the conda packages installed in the environment.
+
+The tests to check the packages are working correctly are in the `test_workshop_VM` folder
+
+ - Run the script `run_all_workshop_tests.sh` from that directory.
+ - They can also be run individually from within each subdirectory if needed.
+ - The full correct outputs are in `test_correct_ouput_log.txt`
+ - There should be no Python tracebacks or import errors if everything runs correctly.
+
 
 ### Notes for setting up the VM from the RSE workshop
 
@@ -43,20 +56,3 @@ conda activate intel_env
 ```
 
 Now the required Python packages will be available.
-
-## Installation and testing of python packages notes
-
-
-The `install_log.txt` contains all the steps used to set up the VM (apt installs, conda install etc)
-
-The `package-list.txt` lists all the conda packages installed in the environment.
-
-The tests to check the packages are working correctly are in the `test_workshop_VM` folder
-
- - Run the script `run_all_workshop_tests.sh` from that directory.
- - They can also be run individually from within each subdirectory if needed.
- - The full correct outputs are in `test_correct_ouput_log.txt`
- - There should be no Python tracebacks or import errors if everything runs correctly.
-
-
-
